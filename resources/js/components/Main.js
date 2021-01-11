@@ -5,10 +5,12 @@ import Footer from './footer/Footer';
 
 export default function Main() {
     return (
-        <Header />
         <div className="container">
+            <Header />
             <div class="content">
-            <div class="title m-b-md">
+              
+            </div>
+              <div class="title m-b-md">
                     Laravel
                 </div>
             <div className="row justify-content-center">
@@ -30,7 +32,6 @@ export default function Main() {
                     </div>
                 </div>
             </div>
-        </div>
             <Footer />
         </div>
     );
