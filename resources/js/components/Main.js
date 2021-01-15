@@ -24,7 +24,32 @@ export default function Main() {
                 <Header />
                 <div className="content">
                 <div className={classes.root}>
-      <Grid container spacing={3}>
+          <Grid container spacing={3}>
+            <Grid item xs={12}>
+                <Paper className={classes.paper}>
+                <div className="title m-b-md">
+                            Design Playground
+                        </div>
+                        <div className="title m-b-md">
+                            Portfolio of Tarantej Singh
+                        </div>
+                </Paper>
+            </Grid>
+                <Grid item xs={6} sm={3}>
+                <Paper className={classes.paper}>Home</Paper>
+                </Grid>
+                <Grid item xs={6} sm={3}>
+                <Paper className={classes.paper}>Projects</Paper>
+                </Grid>
+                <Grid item xs={6} sm={3}>
+                <Paper className={classes.paper}>Case Studies</Paper>
+                </Grid>
+                <Grid item xs={6} sm={3}>
+                <Paper className={classes.paper}>Download CV</Paper>
+                </Grid>
+
+          </Grid>
+      {/* <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper className={classes.paper}>xs=12</Paper>
         </Grid>
@@ -46,13 +71,11 @@ export default function Main() {
         <Grid item xs={6} sm={3}>
           <Paper className={classes.paper}>xs=6 sm=3</Paper>
         </Grid>
-      </Grid>
+      </Grid> */}
     </div>
                 </div>
-                <div className="title m-b-md">
-                        Laravel
-                    </div>
-                <div className="row justify-content-center">
+
+                {/* <div className="row justify-content-center">
                     <div className="col-md-8">
                         <div className="card">
                             <div className="card-header">Main Component</div>
@@ -70,7 +93,7 @@ export default function Main() {
                     </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <Footer />
             </Container>
     );
