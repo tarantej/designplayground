@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './header/Header';
-import Footer from './footer/Footer';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 import { Container, Paper, Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -21,7 +25,6 @@ export default function Main() {
 
     return (
         <Container>
-                <Header />
                 <div className="content">
                 <div className={classes.root}>
           <Grid container spacing={3}>
@@ -35,7 +38,7 @@ export default function Main() {
                         </div>
                 </Paper>
             </Grid>
-                <Grid item xs={6} sm={3}>
+            <Grid item xs={6} sm={3}>
                 <Paper className={classes.paper}>Home</Paper>
                 </Grid>
                 <Grid item xs={6} sm={3}>
@@ -47,7 +50,8 @@ export default function Main() {
                 <Grid item xs={6} sm={3}>
                 <Paper className={classes.paper}>Download CV</Paper>
                 </Grid>
-
+                {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
           </Grid>
       {/* <Grid container spacing={3}>
         <Grid item xs={12}>
@@ -74,27 +78,6 @@ export default function Main() {
       </Grid> */}
     </div>
                 </div>
-
-                {/* <div className="row justify-content-center">
-                    <div className="col-md-8">
-                        <div className="card">
-                            <div className="card-header">Main Component</div>
-
-                            <div className="card-body">I'm an example component!</div>
-                            <div class="links">
-                        <a href="https://laravel.com/docs">Docs</a>
-                        <a href="https://laracasts.com">Laracasts</a>
-                        <a href="https://laravel-news.com">News</a>
-                        <a href="https://blog.laravel.com">Blog</a>
-                        <a href="https://nova.laravel.com">Nova</a>
-                        <a href="https://forge.laravel.com">Forge</a>
-                        <a href="https://vapor.laravel.com">Vapor</a>
-                        <a href="https://github.com/laravel/laravel">GitHub</a>
-                    </div>
-                        </div>
-                    </div>
-                </div> */}
-                <Footer />
             </Container>
     );
 }
