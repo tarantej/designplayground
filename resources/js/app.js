@@ -14,5 +14,6 @@ require('./bootstrap');
 
 require('./components/Main');
 require('./components/Index');
+require('./components/Dashboard');
 require('./components/header/Header');
 require('./components/footer/Footer');
