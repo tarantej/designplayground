@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','IndexController@Main');
-Route::get('/home','IndexController@index');
+// Route::get('/','IndexController@Main');
+Route::get('/','IndexController@index');
 Route::get('/dashboard','AdminController@Dashboard');
 
 // Route::view('/{path?}', 'main');
