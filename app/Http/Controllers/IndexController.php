@@ -16,11 +16,6 @@ class IndexController extends Controller
         return view('index');
     }
 
-    public function Main()
-    {
-        return view('main');
-    }
-
     /**
      * Show the form for creating a new resource.
      *

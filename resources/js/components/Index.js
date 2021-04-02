@@ -6,8 +6,6 @@ import {
     Route,
     Link
   } from "react-router-dom";
-import Header from './header/Header';
-import Footer from './footer/Footer';
 import { Container, Paper, Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -27,11 +25,8 @@ export default function Index() {
 
     return (
         <Container>
-                <Header />
                 <div className="content">
-
-                    Index Page
-                {/* <div className={classes.root}>
+                <div className={classes.root}>
           <Grid container spacing={3}>
             <Grid item xs={12}>
                 <Paper className={classes.paper}>
@@ -57,9 +52,8 @@ export default function Index() {
                 </Grid>
 
           </Grid>
-    </div> */}
+    </div>
                 </div>
-                <Footer />
             </Container>
     );
 }
