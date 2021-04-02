@@ -5,4 +5,6 @@
                     <div id="index"></div>
                 </div>
 
-@endsection
+        </div>
+        <script src="{{ url('/') }}/js/app.js"></script>
+   @endsection

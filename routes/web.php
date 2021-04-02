@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/','IndexController@Main');
+Route::get('/main','IndexController@Main');
 Route::get('/','IndexController@index');
 Route::get('/dashboard','AdminController@Dashboard');
 

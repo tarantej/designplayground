@@ -29,8 +29,8 @@ export default function Dashboard() {
         <Container>
                 <Header />
                 <div className="content">
+                    <h1>Dashboard</h1>
 
-                    Dashboard
                 {/* <div className={classes.root}>
           <Grid container spacing={3}>
             <Grid item xs={12}>
