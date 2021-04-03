@@ -9,23 +9,44 @@
 
     <title>{{ config('app.name', 'DesignPlayground') }}</title>
 
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+     <!-- Favicons -->
+     <link type="favicon" href="{{ asset('img/favicon.png') }}" rel="icon">
+     <link type="favicon" href="{{ asset('img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('../../js/app.js') }}" defer></script>
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link type="text/css" rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link type="text/css" href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link text="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Material Roboto Font -->
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
 
     <!-- Material Font Icons -->
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <!-- Material CSS -->
+
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/materialize.min.css')}}"  media="screen,projection"/>
+
+    <!-- Vendor CSS Files -->
+    <link type="text/css" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{ asset('vendor/icofont/icofont.min.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{ asset('vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{ asset('vendor/venobox/venobox.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{ asset('vendor/owl.carousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{ asset('vendor/aos/aos.css') }}" rel="stylesheet">
+
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{ asset('css/style.css') }}" rel="stylesheet">
 
 </head>
 <body>
@@ -85,5 +106,28 @@
             @yield('content')
         </main>
     </div>
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script type="text/javascript" src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('vendor/jquery.easing/jquery.easing.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('vendor/php-email-form/validate.js')}}"></script>
+    <script type="text/javascript" src="{{asset('vendor/waypoints/jquery.waypoints.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('vendor/counterup/counterup.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('vendor/venobox/venobox.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('vendor/owl.carousel/owl.carousel.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('vendor/typed.js/typed.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('vendor/aos/aos.js')}}"></script>
+
+    <!-- Template Main JS File -->
+    <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
+
+     <!-- Material JS -->
+
+     <script type="text/javascript" src="{{ asset('js/materialize.min.js') }}"></script>
+
+    </body>
 </body>
 </html>
