@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/main','IndexController@Main');
+Route::get('/projects','IndexController@Projects');
+Route::get('/case-studies','IndexController@CaseStudies');
+Route::get('/blog','IndexController@Blog');
 Route::get('/','IndexController@index');
 Route::get('/dashboard','AdminController@Dashboard');
 

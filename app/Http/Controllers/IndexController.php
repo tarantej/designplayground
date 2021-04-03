@@ -16,9 +16,17 @@ class IndexController extends Controller
         return view('index');
     }
 
-    public function Main()
+    public function Projects()
     {
-        return view('main');
+        return view('projects');
+    }
+    public function CaseStudies()
+    {
+        return view('case-studies');
+    }
+    public function Blog()
+    {
+        return view('blog');
     }
 
     /**
