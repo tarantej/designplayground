@@ -1,4 +1,32 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+<nav class="light-blue darken-2 white-text" >
+    <div class="nav-wrapper">
+        <div class="container">
+            <a class="brand-logo" href="{{ url('/') }}">Design Playground</a>
+            <ul id="nav-mobile" class="right hide-on-small-and-down">
+                <li class="nav-item">
+                    <a class="nav-link href="{{ url('/') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('projects') }}">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('case-studies') }}">Case Studies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('blog') }}">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+{{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
             Design Playground
@@ -56,4 +84,4 @@
             </ul>
         </div>
     </div>
-</nav>
+</nav> --}}

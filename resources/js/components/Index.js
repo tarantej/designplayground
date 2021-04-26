@@ -25,7 +25,8 @@ export default function Index() {
 
     return (
         <Container>
-                <div className="content">
+                <div className="content container">
+                    <div className="row">
                 <div className={classes.root}>
           <Grid container spacing={3}>
             <Grid item xs={12}>
@@ -52,6 +53,7 @@ export default function Index() {
                 </Grid>
 
           </Grid>
+          </div>
     </div>
                 </div>
             </Container>

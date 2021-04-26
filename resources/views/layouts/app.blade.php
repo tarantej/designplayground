@@ -1,5 +1,9 @@
-@include('layouts.includes.header')
+@include('layouts.includes.site-header')
 <body>
+    <header id="header" class="white-text">
+        {{-- @include('layouts.includes.nav-menu') --}}
+    </header>
+
     <div id="app">
 
 
