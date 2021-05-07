@@ -14,10 +14,10 @@ export default function Header() {
                     <li class="active"><a href="/"><i class="bx bx-home"></i> <span>Home</span></a></li>
                     <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
                     <li><a href="#projects"><i class="bx bx-file-blank"></i> <span>Projects</span></a></li>
-                    <li><a href="#case-studies"><i class="bx bx-book-content"></i> Case Studies</a></li>
-                    <li><a href="#blog"><i class="bx bx-server"></i> Blog</a></li>
-                    <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-                    <li><a href="#cv"><i class="bx bx-envelope"></i> Download CV</a></li>
+                    <li><a href="#case-studies"><i class="bx bx-cabinet"></i> Case Studies</a></li>
+                    <li><a href="#blog"><i class="bx bx-book"></i> Blog</a></li>
+                    {/* <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li> */}
+                    <li><a href="#cv"><i class="bx bx-id-card"></i> Download CV</a></li>
                     </ul>
                 </div>
                 <div className="social-links row">

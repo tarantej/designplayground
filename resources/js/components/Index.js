@@ -6,7 +6,7 @@ import {
     Route,
     Link
   } from "react-router-dom";
-import { Container, Paper, Grid } from '@material-ui/core';
+import { Container, Paper, Grid, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -24,11 +24,52 @@ export default function Index() {
     const classes = useStyles();
 
     return (
-        <Container>
-                <div className="content container">
+        <div className="container-fluid">
+            <div>
+             {/* ======= Hero Section =======  */}
+    <section id="hero" className="d-flex flex-column justify-content-center align-items-center">
+    <div className="content container">
                     <div className="row">
                 <div className={classes.root}>
           <Grid container spacing={3}>
+            <Grid item xs={12}>
+                <div className="container" data-aos="fade-in" style={{ position: 'relative', zIndex:'2', minWidth: '30%' }}>
+            <h1>Design Playground</h1>
+            <h3>Portfolio of Tarantej Singh</h3>
+        </div>
+
+            </Grid>
+
+            <Button variant="contained" color="primary" href="#home">Home</Button>
+
+            <Button variant="contained" color="primary" href="#about">About</Button>
+
+            <Button variant="contained" color="primary" href="#projects">Projects</Button>
+
+            <Button variant="contained" color="primary" href="#case-studies">Case Studies</Button>
+
+            <Button variant="contained" color="primary" href="#blog">Blog</Button>
+
+            <Button variant="contained" color="red" href="#cv">Download CV</Button>
+
+            
+
+          </Grid>
+          </div>
+    </div>
+                </div>
+        {/* <div className="hero-container" data-aos="fade-in">
+            <h1>Alex Smith</h1>
+            <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+        </div> */}
+    </section>
+     {/* End Hero */}
+            </div>
+
+                <div className="content container">
+                    <div className="row">
+                <div className={classes.root}>
+          {/* <Grid container spacing={3}>
             <Grid item xs={12}>
                 <Paper className={classes.paper}>
                 <div className="title m-b-md">
@@ -52,11 +93,11 @@ export default function Index() {
                 <Paper className={classes.paper}>Download CV</Paper>
                 </Grid>
 
-          </Grid>
+          </Grid> */}
           </div>
     </div>
                 </div>
-            </Container>
+            </div>
     );
 }
 
