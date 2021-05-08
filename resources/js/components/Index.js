@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
       flexGrow: 1,
     },
     paper: {
-      padding: theme.spacing(2),
+      padding: theme.spacing(4),
       textAlign: 'center',
       color: theme.palette.text.secondary,
     },
@@ -31,28 +31,52 @@ export default function Index() {
     <div className="content container">
                     <div className="row">
                 <div className={classes.root}>
-          <Grid container spacing={3}>
+          <Grid container spacing={2}>
             <Grid item xs={12}>
-                <div className="container" data-aos="fade-in" style={{ position: 'relative', zIndex:'2', minWidth: '30%' }}>
+                <div className="container" data-aos="fade-in" style={{ position: 'relative', zIndex:'2' }}>
             <h1>Design Playground</h1>
             <h3>Portfolio of Tarantej Singh</h3>
+            
         </div>
 
             </Grid>
+            <div className="row">
+                
+            <div className="col">
+        <Button variant="contained" color="primary" href="#home">Home</Button>
+      </div>
+      <div className="col">
+        <Button variant="contained" color="primary" href="#about">About</Button>
+      </div>
+      <div className="col">
+        <Button variant="contained" color="primary" href="#projects">Projects</Button>
+      </div>
 
-            <Button variant="contained" color="primary" href="#home">Home</Button>
+      <div className="col">
+        <Button variant="contained" color="primary" href="#case-studies">Case Studies</Button>
+      </div>
 
-            <Button variant="contained" color="primary" href="#about">About</Button>
+      <div className="col">
+        <Button variant="contained" color="primary" href="#blog">Blog</Button>
+      </div>
 
-            <Button variant="contained" color="primary" href="#projects">Projects</Button>
+      <div className="col">
+        <Button variant="contained" color="secondary" href="#cv">Download CV</Button>
+      </div>
 
-            <Button variant="contained" color="primary" href="#case-studies">Case Studies</Button>
+            {/* <Button variant="contained" color="primary" href="#home">Home</Button> */}
 
-            <Button variant="contained" color="primary" href="#blog">Blog</Button>
+            {/* <Button variant="contained" color="primary" href="#about">About</Button> */}
 
-            <Button variant="contained" color="red" href="#cv">Download CV</Button>
+            {/* <Button variant="contained" color="primary" href="#projects">Projects</Button> */}
 
-            
+            {/* <Button variant="contained" color="primary" href="#case-studies">Case Studies</Button> */}
+
+            {/* <Button variant="contained" color="primary" href="#blog">Blog</Button> */}
+
+            {/* <Button variant="contained" color="secondary" href="#cv">Download CV</Button> */}
+
+            </div>
 
           </Grid>
           </div>
