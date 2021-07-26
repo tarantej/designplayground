@@ -2,6 +2,7 @@
 <body>
     <header id="header" class="white-text">
         {{-- @include('layouts.includes.nav-menu') --}}
+        <div id="nav"></div>
     </header>
 
     <div id="app">

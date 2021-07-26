@@ -21,4 +21,5 @@ require('./components/Blog');
 // require('./components/Logout');
 require('./components/Dashboard');
 require('./components/header/Header');
+require('./components/header/Nav');
 require('./components/footer/Footer');
