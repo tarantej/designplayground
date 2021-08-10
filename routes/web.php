@@ -13,10 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/','IndexController@Index');
+Route::get('/about','IndexController@About');
 Route::get('/projects','IndexController@Projects');
 Route::get('/case-studies','IndexController@CaseStudies');
 Route::get('/blog','IndexController@Blog');
-Route::get('/','IndexController@index');
 Route::get('/dashboard','AdminController@Dashboard');
 
 // Route::view('/{path?}', 'main');

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom';
+import Nav from './header/Nav';
 
 export default class CaseStudies extends Component{
     render(){

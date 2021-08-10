@@ -180,10 +180,19 @@ h6 {
     color: #6f7180;
 }
 
-.nav-menu a:hover,
 .nav-menu .active>a,
 .nav-menu li:hover>a {
     text-decoration: none;
+    color: #fff;
+}
+
+.nav-menu a:hover {
+    background: #3f51b5;
+    color: #fff;
+}
+
+.nav-menu .active>a i,
+.nav-menu a:hover i {
     color: #fff;
 }
 
@@ -1140,4 +1149,13 @@ section {
         width: auto;
         padding-right: 20px 15px;
     }
+}
+
+
+}
+
+}
+
+}
+
 }

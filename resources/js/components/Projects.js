@@ -1,93 +1,90 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
-import { Container, Paper, Grid } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import Nav from './header/Nav';
+import axios from 'axios'
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      flexGrow: 1,
-    },
-    paper: {
-      padding: theme.spacing(2),
-      textAlign: 'center',
-      color: theme.palette.text.secondary,
-    },
-  }));
+export default class Projects extends Component{
 
-export default function Projects() {
-    const classes = useStyles();
+    state = {
+        projects:[],
+        loading:false
+        //  to wait for the data to load. Keep true until data is fetched
+    }
 
-    return (
-        <Container>
-                <div className="content">
-                <div className={classes.root}>
-          <Grid container spacing={3}>
-            <Grid item xs={12}>
-                <Paper className={classes.paper}>
-                <div className="title m-b-md">
-                            Projects
-                        </div>
+    //
+    /**
+     *  componentDidMount - Runs when the component has been loaded.
+     *  Also useful for loading http requests
+     *
+     *
+     *
+     */
 
-                </Paper>
-            </Grid>
-                <Grid item xs={6} sm={3}>
-                <Paper className={classes.paper}>Project 1</Paper>
-                </Grid>
-                <Grid item xs={6} sm={3}>
-                <Paper className={classes.paper}>Project 2</Paper>
-                </Grid>
-                <Grid item xs={6} sm={3}>
-                <Paper className={classes.paper}>Project 3</Paper>
-                </Grid>
-                <Grid item xs={6} sm={3}>
-                <Paper className={classes.paper}>Project 4</Paper>
-                </Grid>
-                <Grid item xs={6} sm={3}>
-                <Paper className={classes.paper}>Project 5</Paper>
-                </Grid>
-                <Grid item xs={6} sm={3}>
-                <Paper className={classes.paper}>Project 6</Paper>
-                </Grid>
-                <Grid item xs={6} sm={3}>
-                <Paper className={classes.paper}>Project 7</Paper>
-                </Grid>
-                <Grid item xs={6} sm={3}>
-                <Paper className={classes.paper}>Project 8</Paper>
-                </Grid>
-          </Grid>
-      {/* <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}>xs=12</Paper>
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <Paper className={classes.paper}>xs=12 sm=6</Paper>
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <Paper className={classes.paper}>xs=12 sm=6</Paper>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-          <Paper className={classes.paper}>xs=6 sm=3</Paper>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-          <Paper className={classes.paper}>xs=6 sm=3</Paper>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-          <Paper className={classes.paper}>xs=6 sm=3</Paper>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-          <Paper className={classes.paper}>xs=6 sm=3</Paper>
-        </Grid>
-      </Grid> */}
-    </div>
-                </div>
-            </Container>
-    );
+
+    // componentDidMount(){
+    //     //  Retrieve all project repos from github
+    //     axios.get('https://api.github.com/users/tarantej/repos').then(proj => console.log(proj.data));
+    // }
+
+    //  Using async await
+
+    async componentDidMount(){
+        //  Change object state
+
+        this.setState({  loading:true  });
+
+        //  Retrieve all project repos from github
+        const proj = await axios.get('https://api.github.com/users/tarantej/repos')
+
+        //  Set state to show retrieved output and revert loading state to false
+
+        this.setState({  projects:proj.data, loading:true  });
+
+        console.log(proj.data);
+    }
+
+  // Sample data to show a list of projects using state
+
+//   state={
+//     projects:[
+//       {id:'1',
+//       project_name:'designplayground'
+//       },
+//       {
+//         id:'2',
+//         project_name:'karenhardinglawyer'
+//       },
+//       {
+//         id:'3',
+//         project_name:'djangoevents'
+//       },
+//       {
+//         id:'4',
+//         project_name:'kuraconnect-app'
+//       },
+//       {
+//         id:'5',
+//         project_name:'teamcorp_KG'
+//       }
+//     ]
+//   }
+    render(){
+// Loop through the sameple data to show a list
+        return(
+
+        <div className="container">
+        <h1>Projects</h1>
+        {this.state.projects.map(project => (
+          <table>
+          <tr>
+          <td>{project.id}</td>
+          <td>{project.name}</td>
+          </tr>
+          </table>
+        ))}
+        </div>
+        );
+}
 }
 
 if (document.getElementById('projects')) {

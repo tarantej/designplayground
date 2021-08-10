@@ -11,9 +11,14 @@ class IndexController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function Index()
     {
         return view('index');
+    }
+
+    public function About()
+    {
+        return view('about');
     }
 
     public function Projects()

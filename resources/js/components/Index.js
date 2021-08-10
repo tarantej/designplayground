@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import Nav from './header/Nav';
 import {
     BrowserRouter as Router,
     Switch,

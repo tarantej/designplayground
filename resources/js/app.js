@@ -13,6 +13,7 @@ require('./bootstrap');
  */
 
 require('./components/Index');
+require('./components/About');
 require('./components/Projects');
 require('./components/CaseStudies');
 require('./components/Blog');
