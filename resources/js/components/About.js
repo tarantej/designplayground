@@ -1,12 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import Nav from './header/Nav';
 
-export default class About extends Component{
-    render(){
+export default function About(){
 
-        return(<h1>About</h1>);
-}
+    return(
+        <div className="container">
+            <h1>About</h1>
+        </div>
+
+        );
 }
 
 if (document.getElementById('about')) {

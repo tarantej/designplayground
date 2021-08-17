@@ -1,12 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import Nav from './header/Nav';
 
-export default class CaseStudies extends Component{
-    render(){
+export default function CaseStudies() {
 
-        return(<h1>Case Studies</h1>);
-}
+        return(
+            <div className="container">
+                <h1>Case Studies</h1>
+            </div>
+
+        );
 }
 
 if (document.getElementById('case-studies')) {

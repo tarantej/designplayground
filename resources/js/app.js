@@ -17,6 +17,7 @@ require('./components/About');
 require('./components/Projects');
 require('./components/CaseStudies');
 require('./components/Blog');
+require('./components/Spinner');
 // require('./components/Login');
 // require('./components/Register');
 // require('./components/Logout');

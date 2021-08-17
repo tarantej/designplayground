@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import Nav from './header/Nav';
-import axios from 'axios'
+import axios from 'axios';
+import spinner from './Spinner';
 
 export default class Projects extends Component{
 
@@ -69,7 +70,9 @@ export default class Projects extends Component{
 //     ]
 //   }
     render(){
-// Loop through the sameple data to show a list
+//  If data has not been loaded show the spinner
+
+// Loop through the sample data to show a list
         return(
 
         <div className="container">
