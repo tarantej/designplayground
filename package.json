@@ -1,6 +1,7 @@
 {
     "private": true,
     "scripts": {
+        "start": "HTTPS=true SSL_CRT_FILE='./localhost.pem' SSL_KEY_FILE='./localhost-key.pem' react-scripts start",
         "dev": "yarn run development",
         "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch": "yarn run development -- --watch",
