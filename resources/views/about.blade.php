@@ -3,9 +3,10 @@
 
 @section('content')
 
-                <div class="container-fluid">
+                <div class="container">
                     <div id="about"></div>
                 </div>
 
         </div>
+        <script src="{{ url('../') }}/js/app.js"></script>
    @endsection

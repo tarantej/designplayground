@@ -1,4 +1,5 @@
 import React , { Fragment } from 'react';
+import materialize from 'materialize-css';
 import spinner from '../../../public/images/spinner.gif';
 
 const Spinner = () =>

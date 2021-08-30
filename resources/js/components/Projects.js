@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Nav from './header/Nav';
 import axios from 'axios';
 import spinner from './Spinner';
+import Search from './Search';
 
 export default class Projects extends Component{
 
@@ -77,14 +78,30 @@ export default class Projects extends Component{
 
         <div className="container">
         <h1>Projects</h1>
+
+{/* Insert Search Component */}
+
+            <Search />
+            <table>
+              <thead>
+                <tr>
+                    <td>Project ID</td>
+                    <td>Project Name</td>
+                </tr>
+                </thead>
         {this.state.projects.map(project => (
-          <table>
-          <tr>
+             <tbody>
+
+
+             <tr>
           <td>{project.id}</td>
           <td>{project.name}</td>
           </tr>
-          </table>
+             </tbody>
+
+
         ))}
+        </table>
         </div>
         );
 }

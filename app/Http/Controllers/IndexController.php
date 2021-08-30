@@ -34,6 +34,11 @@ class IndexController extends Controller
         return view('blog');
     }
 
+    public function Search()
+    {
+        return view('search');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

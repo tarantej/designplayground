@@ -18,6 +18,7 @@ Route::get('/about','IndexController@About');
 Route::get('/projects','IndexController@Projects');
 Route::get('/case-studies','IndexController@CaseStudies');
 Route::get('/blog','IndexController@Blog');
+Route::get('/search','IndexController@Search');
 Route::get('/dashboard','AdminController@Dashboard');
 
 // Route::view('/{path?}', 'main');

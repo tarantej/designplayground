@@ -30,7 +30,8 @@
         "@material-ui/styles": "^4.11.2",
         "@popperjs/core": "^2.9.1",
         "bootstrap": "^5.0.0-beta3",
-        "materialize-css": "^1.0.0-rc.2",
+        "global": "^4.4.0",
+        "materialize-css": "^1.0.0",
         "react-router-dom": "^5.2.0"
     }
 }
